@@ -1,8 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { WordSorter } from './word-sorter/word-sorter';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,WordSorter,FormsModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
