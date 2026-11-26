@@ -1,0 +1,17 @@
+<div class="container mt-4">
+
+  <h2>Odd or Even Numbers</h2>
+
+  <ul class="list-group">
+
+    @for (n of numbers; track n) {
+
+      <li class="list-group-item" [ngClass]="n % 2 === 0 ? 'text-primary' : 'text-danger'">
+        {{n}} - {{n % 2 === 0 ? 'Even' : 'Odd'}}
+      </li>
+
+    }
+
+  </ul>
+
+</div>
